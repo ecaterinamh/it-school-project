@@ -1,0 +1,276 @@
+/* variables */
+:root {
+  --max-width: 75rem;
+  --min-width: 20rem;
+  --bg-primary: #141e4c;
+  --bg-secondary: #dfedf5;
+  --bg-dark: #101d42;
+  --button-color: #2bb686;
+  --light-grey: #666;
+  --border-light-grey: #ddd;
+  --border-medium-grey: #8e8e8e;
+  --text-white: #ffffff;
+  --text-light: #eaeaea;
+  --text-dark-blue: #101d42;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --font-family: "Poppins", sans-serif;
+  --font-sm-size: 0.75rem;
+  --font-md-size: 0.9rem;
+  --font-lg-size: 3.5rem;
+  --padding-md-size: 15px;
+  --img-size: 150px;
+  --margin-bottom: 2rem;
+}
+
+/* universal settings */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+/* nav section for all the pages  */
+nav {
+  width: 100%;
+  background-color: var(--bg-primary);
+  position: fixed;
+  z-index: 1;
+}
+
+.content {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  padding: var(--padding-md-size);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img[src*="itschool-logo"] {
+  width: auto;
+  height: 3.75rem;
+}
+
+.content ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  position: relative;
+}
+
+ul a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--font-sm-size);
+  padding: var(--padding-md-size);
+}
+
+ul a:link,
+ul a:visited {
+  color: var(--text-light);
+}
+
+ul a:hover {
+  color: var(--text-secondary);
+}
+
+.about span {
+  position: absolute;
+  top: 25px;
+}
+
+.dropdown-content {
+  position: absolute;
+  width: 8.75rem;
+  height: 3.75rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-size: var(--font-sm-size);
+  left: 10px;
+  right: -3.75rem;
+  z-index: 1;
+  line-height: 0rem;
+  padding: 2px 4px;
+  display: none;
+}
+
+.dropdown-content a {
+  margin-left: -10px;
+  display: block;
+  padding: 0.8rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-mobile {
+  color: white;
+  height: 1.25rem;
+  align-self: center;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  img[src*="itschool-logo"] {
+    width: auto;
+    height: 3.125rem;
+  }
+
+  .content ul li {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    cursor: pointer;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  #toggle,
+  .menu-icon .close {
+    display: none;
+  }
+
+  .menu-list {
+    position: absolute;
+    width: 100%;
+    height: 11rem;
+    left: 0;
+    top: 5rem;
+    background-color: var(--bg-dark);
+    padding: 5px 20px 0 20px;
+    display: none;
+    z-index: 2;
+  }
+
+  .menu-list a {
+    display: block;
+    line-height: 1.6rem;
+    padding-top: 0.625rem;
+    color: var(--text-light);
+    font-size: var(--font-sm-size);
+    text-decoration: none;
+    padding: 0.9rem 0;
+  }
+
+  #toggle:checked + .menu-list {
+    display: block;
+  }
+
+  .menu-list a:hover {
+    color: var(--text-secondary);
+  }
+}
+
+/* main section */
+
+/* welcome (or first) section of courses, contact and about pages */
+.welcome {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  font-weight: 800;
+  font-family: var(--font-family);
+  font-size: var(--font-lg-size);
+  color: var(--text-light);
+}
+
+@media only screen and (max-width: 760px) {
+  .welcome h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+/* css of sections' titles  */
+
+#title-section {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+#title-section h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--text-dark-blue);
+  margin: 0;
+}
+
+/* css of text description */
+
+.text-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-width: 40%;
+  height: auto;
+}
+
+.text-section p {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  height: auto;
+  font-size: var(--font-md-size);
+  text-align: center;
+  margin-bottom: 30px;
+  word-wrap: break-all;
+}
+
+/* footer section */
+footer {
+  width: 100%;
+  height: 12vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  height: 4.5rem;
+  padding: var(--padding-md-size);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content > p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: var(--font-sm-size);
+  text-align: center;
+}

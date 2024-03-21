@@ -1,0 +1,124 @@
+/* first section (welcome) is styled within main.css */
+
+/* second section (us) */
+.trainer-section {
+  width: 100%;
+  height: auto;
+}
+
+.trainer-content {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  height: auto;
+  padding: var(--padding-md-size);
+  margin: 0 auto;
+}
+
+.trainer-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: var(--margin-bottom);
+}
+
+.trainer-item {
+  width: calc(100% / 4);
+  padding: 0 calc(var(--padding-md-size) / 2);
+}
+
+.item-block {
+  border: 2px solid blue;
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  border: 1px solid var(--border-light-grey);
+  border-radius: 5px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-photo {
+  width: var(--img-size);
+  height: var(--img-size);
+  border-radius: 50%;
+  margin-top: -80px;
+}
+
+.item-photo > img {
+  width: var(--img-size);
+  height: var(--img-size);
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+
+.item-body {
+  width: 100%;
+  margin-top: -8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-title {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  top: calc(50% - 15rem / 2);
+  left: calc(50% -15rem / 2);
+  margin-bottom: unset;
+}
+
+.item-title h3 {
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  opacity: 0.9;
+  max-width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: normal;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: unset;
+}
+
+.item-text {
+  width: 100%;
+  min-height: 250px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: var(--font-md-size);
+}
+
+@media only screen and (max-width: 992px) {
+  .trainer-item {
+    width: calc(100% / 3);
+  }
+}
+
+/* media queries for mobile screen  */
+@media only screen and (max-width: 768px) {
+  .trainer-item {
+    width: calc(100% / 2);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .trainer-item {
+    width: 100%;
+  }
+
+  .item-block {
+    min-height: 150px;
+  }
+
+  .item-text {
+    min-height: 100px;
+  }
+}

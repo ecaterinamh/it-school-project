@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy of IT School's site</title>
+
+    <!-- css' links -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <!-- fonts' links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons' links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- nav container -->
+    <header>
+      <nav>
+        <div class="content">
+          <a href="index.html"
+            ><img src="./img/itschool-logo.png" alt="logo"
+          /></a>
+          <ul>
+            <li class="courses">
+              <a href="./pages/courses.html">CURSURI ONLINE</a>
+            </li>
+            <li class="about">
+              <div class="dropdown">
+                <a href="./pages/about.html">
+                  <span class="material-symbols-outlined arrow"
+                    >arrow_drop_down</span
+                  >
+                  DESPRE NOI</a
+                >
+                <div class="dropdown-content">
+                  <a href="./index.html">IT SCHOOL</a>
+                  <a href="./pages/about.html">DESPRE NOI</a>
+                </div>
+              </div>
+            </li>
+            <li class="contact"><a href="./pages/contact.html">CONTACT</a></li>
+          </ul>
+          <!-- hamburger menu for mobile screen -->
+          <div class="menu-mobile">
+            <label for="toggle"
+              ><span class="material-symbols-outlined menu"> menu</span></label
+            >
+            <input type="checkbox" id="toggle" />
+            <div class="menu-list">
+              <a href="./pages/courses.html">CURSURI ONLINE</a>
+              <a href="./pages/about.html">DESPRE NOI</a>
+              <a href="./pages/contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main container -->
+    <main>
+      <!-- intro section -->
+      <section class="intro-section">
+        <div class="intro-content">
+          <h1>Bine ai venit!</h1>
+          <p>
+            Accelerator de cariere in <span class="curly-brace">{</span>web
+            development<span class="curly-brace">}</span>
+          </p>
+          <p>Cursuri IT pentru incepatori cu certificare</p>
+          <img src="./img/microsoft.png" alt="microsoft" />
+          <img src="./img/adobe.png" alt="adobe" />
+          <img src="./img/apple.png" alt="apple" />
+          <img src="./img/minister.png" alt="minister" />
+          <button class="submit" type="button">
+            <a href="./pages/courses.html">AFLA MAI MULTE</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- courses section -->
+      <section class="courses-section">
+        <div class="courses-content">
+          <div id="title-section">
+            <h2>Calendar cursuri</h2>
+          </div>
+          <div class="courses-container">
+            <div class="course-block">
+              <div class="courses-item">
+                <div class="item-content">
+                  <h4 class="item-title">Python</h4>
+                  <div class="details">
+                    <p class="calendar">
+                      <span
+                        class="material-symbols-outlined today"
+                        style="font-size: 14px"
+                        >today</span
+                      >In curand
+                    </p>
+                    <p class="place">
+                      <span
+                        class="material-symbols-outlined loc-icon"
+                        style="font-size: 14px"
+                        >location_on</span
+                      >Online
+                    </p>
+                  </div>
+                </div>
+                <div class="green-line"></div>
+              </div>
+            </div>
+            <div class="course-block">
+              <div class="courses-item">
+                <div class="item-content">
+                  <h4 class="item-title">Web Development</h4>
+                  <div class="details">
+                    <p class="calendar">
+                      <span
+                        class="material-symbols-outlined today"
+                        style="font-size: 14px"
+                        >today</span
+                      >In curand
+                    </p>
+                    <p class="place">
+                      <span
+                        class="material-symbols-outlined loc-icon"
+                        style="font-size: 14px"
+                        >location_on</span
+                      >Online
+                    </p>
+                  </div>
+                </div>
+                <div class="green-line"></div>
+              </div>
+            </div>
+            <div class="course-block">
+              <div class="courses-item">
+                <div class="item-content">
+                  <h4 class="item-title">Introducere in IT</h4>
+                  <div class="details">
+                    <p class="calendar">
+                      <span
+                        class="material-symbols-outlined today"
+                        style="font-size: 14px"
+                        >today</span
+                      >In curand
+                    </p>
+                    <p class="place">
+                      <span
+                        class="material-symbols-outlined loc-icon"
+                        style="font-size: 14px"
+                        >location_on</span
+                      >Online
+                    </p>
+                  </div>
+                </div>
+                <div class="green-line"></div>
+              </div>
+            </div>
+            <div class="course-block">
+              <div class="courses-item">
+                <div class="item-content">
+                  <h4 class="item-title">Programare C++</h4>
+                  <div class="details">
+                    <p class="calendar">
+                      <span
+                        class="material-symbols-outlined today"
+                        style="font-size: 14px"
+                        >today</span
+                      >In curand
+                    </p>
+                    <p class="place">
+                      <span
+                        class="material-symbols-outlined loc-icon"
+                        style="font-size: 14px"
+                        >location_on</span
+                      >Online
+                    </p>
+                  </div>
+                </div>
+                <div class="green-line"></div>
+              </div>
+            </div>
+            <div class="course-block">
+              <div class="courses-item">
+                <div class="item-content">
+                  <h4 class="item-title">Programare Java</h4>
+                  <div class="details">
+                    <p class="calendar">
+                      <span
+                        class="material-symbols-outlined today"
+                        style="font-size: 14px"
+                        >today</span
+                      >In curand
+                    </p>
+                    <p class="place">
+                      <span
+                        class="material-symbols-outlined loc-icon"
+                        style="font-size: 14px"
+                        >location_on</span
+                      >Online
+                    </p>
+                  </div>
+                </div>
+                <div class="green-line"></div>
+              </div>
+            </div>
+            <div class="course-block">
+              <div class="courses-item">
+                <div class="item-content">
+                  <h4 class="item-title">Graphic Design</h4>
+                  <div class="details">
+                    <p class="calendar">
+                      <span
+                        class="material-symbols-outlined today"
+                        style="font-size: 14px"
+                        >today</span
+                      >In curand
+                    </p>
+                    <p class="place">
+                      <span
+                        class="material-symbols-outlined loc-icon"
+                        style="font-size: 14px"
+                        >location_on</span
+                      >Online
+                    </p>
+                  </div>
+                </div>
+                <div class="green-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="about-section">
+        <div class="about-content">
+          <div id="title-section">
+            <h2>Ce este IT School?</h2>
+          </div>
+          <div class="text-section">
+            <p>
+              IT School este o comunitate educațională de IT, locul unde
+              pasionații acestui domeniu se întâlnesc cu viitorii profesioniști.
+              Timp de peste 7 ani, am construit alături de trainerii IT School
+              un mediu de învățare specializat pentru toți cei care își doresc
+              să descopere oportunitățile acestui domeniu. Ești pregătit să faci
+              parte din comunitatea IT School?
+            </p>
+          </div>
+          <div class="about-container">
+            <div class="about-image">
+              <img src="./img/about-us-1.jpeg" alt="aboutus1" />
+            </div>
+            <div class="about-image">
+              <img src="./img/about-us-2.jpeg" alt="aboutus2" />
+            </div>
+            <div class="about-image">
+              <img src="./img/about-us-3.jpeg" alt="aboutus3" />
+            </div>
+            <div class="about-image">
+              <img src="./img/about-us-4.jpeg" alt="aboutus4" />
+            </div>
+            <div class="about-image">
+              <img src="./img/about-us-5.jpeg" alt="aboutus5" />
+            </div>
+            <div class="about-image">
+              <img src="./img/about-us-6.jpeg" alt="aboutus6" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- partnership section -->
+      <section class="partnership-section">
+        <div id="title-section">
+          <h2>Parteneri</h2>
+        </div>
+        <div class="partnership-container">
+          <div class="p-img"><img src="./img/toluna.png" alt="toluna" /></div>
+          <div class="p-img">
+            <img src="./img/123formbuilder.png" alt="formbuilder" />
+          </div>
+          <div class="p-img"><img src="./img/nagarro.png" alt="nagarro" /></div>
+          <div class="p-img">
+            <img src="./img/cognizant.png" alt="cognizant" />
+          </div>
+          <div class="p-img">
+            <img src="./img/dreamproduction.png" alt="dreamproduction" />
+          </div>
+          <div class="p-img"><img src="./img/ness.png" alt="ness" /></div>
+          <div class="p-img">
+            <img src="./img/instapage.png" alt="instapage" />
+          </div>
+          <div class="p-img"><img src="./img/amdaris.png" alt="amdaris" /></div>
+          <div class="p-img"><img src="./img/fortech.png" alt="fortech" /></div>
+          <div class="p-img"><img src="./img/visma.png" alt="visma" /></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-content">
+        <p>IT School România © 2021. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+  </body>
+</html>

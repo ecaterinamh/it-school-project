@@ -1,0 +1,162 @@
+/* first section (welcome) was styled within main.css */
+
+/* second section (programs) containing programs  */
+.programs {
+  width: 100%;
+  height: auto;
+}
+
+.programs-content {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  height: auto;
+  padding: var(--padding-md-size);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.programs-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: var(--margin-bottom);
+}
+
+/* styling of card programs */
+.program-block {
+  width: calc(100% / 3);
+  padding: 0 calc(var(--padding-md-size) / 2);
+  margin-bottom: var(--padding-md-size);
+}
+
+.program-item {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-light-grey);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.program-item > img {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-bottom: var(--margin-bottom);
+}
+
+.program-title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--text-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: var(--font-md-size);
+  color: var(--light-grey);
+  padding-right: 0.5rem;
+}
+
+.program-text {
+  padding: 0 5px;
+}
+
+.program-text img {
+  width: auto;
+  height: 1.2rem;
+  margin: unset;
+}
+
+.program-text img {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.program-text p {
+  margin-bottom: 0.8rem;
+}
+
+/* styling icons*/
+.icons {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-course,
+.period,
+.hours {
+  display: inline-flex;
+  align-items: center;
+  color: var(--light-grey);
+  font-size: var(--font-md-size);
+  margin: 0;
+}
+
+.calendar-course > p,
+.period > p,
+.hours > p {
+  vertical-align: middle;
+  font-size: var(--font-md-size);
+  padding-left: 2px;
+  color: #666;
+  margin: 0;
+}
+
+.period span,
+.hours span {
+  padding-left: 10px;
+  margin: 0;
+}
+
+span {
+  padding-right: 5px;
+}
+
+/* button styling */
+.courses-button {
+  width: 6rem;
+  padding: 0.3rem 0.4rem;
+  background-color: var(--button-color);
+  color: var(--text-white);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses-button a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: var(--font-md-size);
+}
+
+/* media queries for courses-section, about-section and partnership-section */
+
+/* media queries for tablet screen */
+@media only screen and (max-width: 992px) {
+  .program-block {
+    width: 50%;
+  }
+}
+
+/* media queries for mobile screen  */
+@media only screen and (max-width: 768px) {
+  .program-block {
+    width: 100%;
+  }
+}
